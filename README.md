@@ -1,16 +1,3 @@
-# whatsapp_stickers_example
+# WhatsApp Sticker App using Flutter
 
-Demonstrates how to use the flutter_whatsapp_stickers plugin.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![full_screnshot](https://user-images.githubusercontent.com/13075784/85202566-d57aa280-b324-11ea-8098-38757234c388.png)
