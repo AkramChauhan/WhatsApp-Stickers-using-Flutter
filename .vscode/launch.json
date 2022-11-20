@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "trendy_whatsapp_stickers",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "trendy_whatsapp_stickers (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "trendy_whatsapp_stickers (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "whatsapp_stickers_handler",
+            "cwd": "plugins/whatsapp_stickers_handler",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "whatsapp_stickers_handler (profile mode)",
+            "cwd": "plugins/whatsapp_stickers_handler",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "whatsapp_stickers_handler (release mode)",
+            "cwd": "plugins/whatsapp_stickers_handler",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
