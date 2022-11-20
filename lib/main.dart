@@ -1,62 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:trendy_whatsapp_stickers/Widgets/Admob.dart';
-import 'package:trendy_whatsapp_stickers/Widgets/Drawer.dart';
-import 'package:trendy_whatsapp_stickers/sticker_list.dart';
+import 'package:trendy_whatsapp_stickers/screens/information_screen.dart';
+import 'package:trendy_whatsapp_stickers/screens/sticker_pack_info.dart';
+import 'package:trendy_whatsapp_stickers/screens/stickers_screen.dart';
 
-void main() => runApp(MyApp());
+enum PopupMenuOptions {
+  staticStickers,
+  remoteStickers,
+  informations,
+}
 
-class MyApp extends StatelessWidget {
-  final String title = 'Trendy WhatsApp Stickers';
+void main() {
+  runApp(const MyApp());
+}
 
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: title,
+      title: "Trendy WhatsApp Stickers",
+      initialRoute: StickersScreen.routeName,
       theme: ThemeData(
-        primaryColor: Colors.teal[900],
+        primarySwatch: Colors.teal,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-  @override
-  void initState() {
-    super.initState();
-    AdmobAd.initialize();
-    AdmobAd.showBannerAd();
-  }
-  @override
-  void dispose() {
-    AdmobAd.hideBannerAd();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    List<Widget> fakeBottomButtons = new List<Widget>();
-    fakeBottomButtons.add(
-      Container(
-        height: 50.0,
-      ),
-    );
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Trendy WhatsApp Stickers"),
-      ),
-      body: StaticContent(),
-      drawer: Drawer(
-        child: MyDrawer(),
-      ),
-      persistentFooterButtons: fakeBottomButtons,
+      routes: {
+        StickersScreen.routeName: (ctx) => const StickersScreen(),
+        StickerPackInfoScreen.routeName: (ctx) => const StickerPackInfoScreen(),
+        InformationScreen.routeName: (ctx) => const InformationScreen()
+      },
     );
   }
 }

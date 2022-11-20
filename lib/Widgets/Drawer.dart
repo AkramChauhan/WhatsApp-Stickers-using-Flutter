@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:esys_flutter_share/esys_flutter_share.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class MyDrawer extends StatelessWidget {
   static const TextStyle _menuTextColor = TextStyle(
@@ -35,8 +35,7 @@ class MyDrawer extends StatelessWidget {
             ),
             title: Text("Share",style: _menuTextColor),
             onTap: () {
-              Share.text("Download Best WhatsApp Stickers ",
-                  "Download Best WhatsApp Stickers \n\n 👇👇👇👇👇 \nDownload Now\nhttps://play.google.com/store/apps/details?id=com.gamacrack.trending_stickers","text/plain");
+              Share.share("Download Best WhatsApp Stickers \n\n 👇👇👇👇👇 \nDownload Now\nhttps://play.google.com/store/apps/details?id=com.gamacrack.trending_stickers");
             },
           ),
           ListTile(
@@ -48,8 +47,8 @@ class MyDrawer extends StatelessWidget {
             onTap: () async {
               Navigator.of(context).pop();
               const url = 'https://play.google.com/store/apps/details?id=com.gamacrack.trending_stickers&reviewId=0';
-              if (await canLaunch(url)) {
-                await launch(url);
+              if (await canLaunchUrlString(url)) {
+                await launchUrlString(url);
               } else {
                 throw 'Could not open App';
               }

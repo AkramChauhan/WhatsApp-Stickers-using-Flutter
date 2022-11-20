@@ -1,0 +1,28 @@
+name: whatsapp_stickers_handler
+description: Stickers for WhatsApp plugin to manage WPStickerApp. This plugin will helps you to add stickers to WhatsApp on Android and iOS devices.
+version: 0.0.1+1
+homepage: https://github.com/jigneshpandav/whatsapp_stickers_handler
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  dio:
+  flutter:
+    sdk: flutter
+  path_provider:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.indiagenisys.whatsapp_stickers_handler
+        pluginClass: WhatsappStickersHandlerPlugin
+      ios:
+        pluginClass: WhatsappStickersHandlerPlugin

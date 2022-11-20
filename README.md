@@ -1,17 +1,16 @@
-# WhatsApp Sticker App using Flutter
+# trendy_whatsapp_stickers
 
-![full_screnshot](https://user-images.githubusercontent.com/13075784/85202566-d57aa280-b324-11ea-8098-38757234c388.png)
+A new Flutter project.
 
-<!-- # Available in PlayStore
+## Getting Started
 
-<a href="https://play.google.com/store/apps/details?id=com.gamacrack.trending_stickers">![640px-Google_Play_Store_badge_EN svg](https://user-images.githubusercontent.com/13075784/85202629-55087180-b325-11ea-8307-acf71c9b7022.png)
-</a>
- -->
-# Checkout my another Flutter App - SHAYARIN 
+This project is a starting point for a Flutter application.
 
-Introducing Dynamic Shayari Image Generator. Crafted with Love & Created using Flutter.
+A few resources to get you started if this is your first Flutter project:
 
-<a href="https://play.google.com/store/apps/details?id=com.gamacrack.shayari">![640px-Google_Play_Store_badge_EN svg](https://user-images.githubusercontent.com/13075784/85202629-55087180-b325-11ea-8307-acf71c9b7022.png)
-</a>
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
