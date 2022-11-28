@@ -29,7 +29,7 @@ android {
     aaptOptions {
         noCompress "webp"
     }
-    compileSdkVersion 33
+    compileSdkVersion 31
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -40,7 +40,7 @@ android {
         multiDexEnabled true
         applicationId "com.example.trendy_whatsapp_stickers"
         minSdkVersion flutter.minSdkVersion
-        targetSdkVersion 33
+        targetSdkVersion 31
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
