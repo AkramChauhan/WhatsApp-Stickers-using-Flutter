@@ -33,10 +33,10 @@ dependencies:
     sdk: flutter
   whatsapp_stickers_handler:
       path: ./plugins/whatsapp_stickers_handler
-  url_launcher: ^6.1.6
-  cupertino_icons: ^1.0.2
-  share_plus: ^6.3.0
-  plugin_platform_interface: ^2.1.2
+  url_launcher: 
+  cupertino_icons:
+  share_plus:
+  plugin_platform_interface: 
 
 dev_dependencies:
   flutter_test:
